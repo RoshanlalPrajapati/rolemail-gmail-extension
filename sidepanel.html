@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RoleMail</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>RoleMail</h1>
+  <p class="subtitle">Smart job email templates</p>
+
+  <!-- Add / Edit Template -->
+  <section class="card">
+    <h2>Add / Edit Template</h2>
+
+    <input id="title" placeholder="Template name" />
+    <input id="subject" placeholder="Email subject" />
+    <input id="resume" placeholder="Resume link (Google Drive)" />
+    <textarea id="body" placeholder="Email message"></textarea>
+
+    <div class="row">
+      <button id="save" class="primary">Save</button>
+      <button id="clear" class="secondary">Clear</button>
+    </div>
+  </section>
+
+  <!-- Saved Templates -->
+  <section class="card">
+    <h2>Saved Templates</h2>
+
+    <select id="templates"></select>
+
+    <div class="row">
+      <button id="use" class="primary">Paste to Gmail</button>
+    </div>
+
+    <div class="row">
+      <button id="edit" class="secondary">Edit</button>
+      <button id="delete" class="danger">Delete</button>
+    </div>
+  </section>
+</div>
+
+<!-- Toast notifications -->
+<div id="toast"></div>
+
+<script src="sidepanel.js"></script>
+</body>
+</html>

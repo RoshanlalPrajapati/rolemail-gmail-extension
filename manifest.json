@@ -3,7 +3,7 @@
   "name": "RoleMail",
   "version": "2.1",
   "description": "A smart Gmail side panel to create, manage, and reuse email templates with one-click paste.",
-  "permissions": ["storage", "activeTab", "scripting", "sidePanel"],
+  "permissions": ["storage", "activeTab", "sidePanel"],
   "host_permissions": ["https://mail.google.com/*"],
   "icons": {
     "16": "icon.png",
